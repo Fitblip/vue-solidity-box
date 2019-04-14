@@ -23,8 +23,8 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      '@config' : resolve('config'),
-      '@contracts' : resolve('build/contracts')
+      '@config': resolve('config'),
+      '@contracts': resolve('build/contracts')
     }
   },
   module: {
@@ -37,7 +37,8 @@ module.exports = {
         options: {
           formatter: require('eslint-friendly-formatter'),
           configFile: resolve('config/eslint/.eslintrc.js'),
-          ignorePath: resolve('config/eslint/.eslintignore')
+          ignorePath: resolve('config/eslint/.eslintignore'),
+          emitWarning: true
         }
       },
       {
